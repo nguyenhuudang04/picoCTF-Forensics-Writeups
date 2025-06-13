@@ -1,5 +1,8 @@
 🔍 CTF Writeup: Mob Psycho
-![image](https://github.com/user-attachments/assets/6b928f22-5cd8-4532-8d95-74e7ccc6f426)
+Decription :
+Can you handle APKs?
+Download the android apk here.
+Hint: Did you know you can unzip APKs?,Now you have the whole host of shell tools for searching these files.
 
 
 ![image](https://github.com/user-attachments/assets/7e2b63a4-e3b5-4c9d-992a-6df97105862f)
