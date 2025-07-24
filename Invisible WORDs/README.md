@@ -32,38 +32,6 @@ here is the zip file header hidden in .bmp
 and we also notice that every 2 bytes, 2 more bytes of garbage are inserted into the example 50 4b 95 52 03 04
 but the correct header of the zip file format is 50 4b 03 04
 
-cat a.py 
-'''
-def extract_pk_data(input_file='output.bmp', output_file='out'):
-    with open(input_file, 'rb') as ip:
-        data = ip.read()
-
-    # Tìm vị trí đầu tiên có byte 0x50 0x4B
-    start_offset = data.find(b'\x50\x4B')
-    if start_offset == -1:
-        print("❌ Không tìm thấy chuỗi 'PK' trong file.")
-        return
-
-    print(f"✅ Tìm thấy 'PK' tại offset: {hex(start_offset)}")
-
-    # Tạo buffer chứa dữ liệu đã xử lý
-    result = bytearray()
-    idx = start_offset
-
-    # Cứ giữ 2 byte, bỏ 2 byte cho đến hết
-    while idx < len(data):
-        result.extend(data[idx:idx+2])  # giữ 2 byte
-        idx += 4                        # bỏ 2 byte tiếp theo
-
-    # Ghi ra file mới
-    with open(output_file, 'wb') as op:
-        op.write(result)
-
-    print(f"✅ Đã ghi kết quả vào '{output_file}'.")
-# Chạy hàm
-extract_pk_data()
-
-'''
 
 from above will have code to run data collection and export to file
 
