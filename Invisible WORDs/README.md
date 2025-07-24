@@ -60,9 +60,9 @@ def extract_pk_data(input_file='output.bmp', output_file='out'):
         op.write(result)
 
     print(f"✅ Đã ghi kết quả vào '{output_file}'.")
-
 # Chạy hàm
 extract_pk_data()
+
 '''
 
 from above will have code to run data collection and export to file
