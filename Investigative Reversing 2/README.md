@@ -14,7 +14,7 @@ What is LSB encoding?
 Use Ghidra tool to analyze mystery file, in CTF form like this, we will usually analyze code file 
 and from there reverse image file to find flag
 
-<pre lang="markdown"> ```undefined8 main(void)
+<pre lang="markdown">undefined8 main(void)
 
 {
   size_t sVar1;
@@ -80,7 +80,7 @@ and from there reverse image file to find flag
   }
                     /* WARNING: Subroutine does not return */
   __stack_chk_fail();
-} ``` </pre>
+} </pre>
 
 
 
